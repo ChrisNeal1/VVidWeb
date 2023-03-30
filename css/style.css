@@ -2,14 +2,21 @@
     font-size: 16px;
     margin: none;
 }
+body{
+    background: linear-gradient(rgba(0, 0, 255, 0.589), rgba(122, 122, 122, 0.199), rgba(66, 66, 66, 0.767))
+}
 .header{
     height: 2.5rem;
     color: aliceblue;
 }
 .navbar{
-    height: 5.5rem;
-    color: blue;
-    font-style: normal;
+    /* height: 5.5rem; */
+    color: rgba(161, 161, 161, 0.596);
+    list-style-type: none;
     display: flex;
-    justify-content:space-around;
+    align-items: center;
+    text-align: center;
+}
+aside{
+    height: 50rem;
 }
