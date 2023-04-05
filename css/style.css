@@ -3,9 +3,23 @@
     font-family: 'Open Sans', sans-serif;
     margin: none;
 }
-.hapage{
+/* .hapage{
     display: flex;
     align-items: flex-end;
+} */
+nav ul li{
+    /* display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between; */
+    /* background: linear-gradient(rgba(21, 107, 187, 0.418), rgba(207, 207, 207, 0.24),rgba(65, 65, 65, 0.767)); */
+    /* margin-top: auto; */
+    /* border-radius: 1.5rem; */
+    /* margin-left: auto; */
+    /* padding: .2rem .9rem; */
+    color: white;
+    font-size: 2.5rem;
+    /* list-style-type: none;
+    float: right; */
 }
 .right{
     display: flex;
@@ -13,6 +27,10 @@
     /* align-self: flex-end; */
     align-self: flex-end;
 }
+/* .jumbo1{
+    position:sticky;
+    left: 50%;
+} */
 .jumbotron{
     color: rgb(0, 0, 0);
     border: 2px rgb(0, 0, 0) solid;
