@@ -94,10 +94,10 @@ aside{
         font-size: 20px;
       }
       .logo1{
-      height: 12.5rem;
-      width: 14.5rem;
-      margin-top: .5rem;
-      margin-left: -1rem;
+        height: 12.75rem;
+        width: 14.5rem;
+        margin-top: .5rem;
+        margin-left: -1rem;
       }
       .nav-item{
           font-size: 1.5rem;
@@ -105,14 +105,14 @@ aside{
       }
       .jumbotron{
           top: 45vh;
-          transition: none;
+          
           }
       /* .jumbotron:hover{
           transform: none;
           border-width: 5px;
       } */
       .jumbotext1{
-          font-size: 1.25rem;
+          font-size: 1.5rem;
       }
     }
 
@@ -121,10 +121,10 @@ aside{
       font-size: 24px;
     }
     .logo1{
-    height: 11.5rem;
-    width: 14.5rem;
-    margin-top: -2rem;
-    margin-left: -1rem;
+        height: 11.5rem;
+        width: 14.5rem;
+        margin-top: -2rem;
+        margin-left: -1rem;
     }
     .nav-item{
         font-size: 1.5rem;
@@ -147,10 +147,10 @@ aside{
       font-size: 24px;
     }
     .logo1{
-    height: 11.5rem;
-    width: 14.5rem;
-    margin-top: -2rem;
-    margin-left: -1rem;
+        height: 11.5rem;
+        width: 14.5rem;
+        margin-top: -2rem;
+        margin-left: -1rem;
     }
     .nav-item{
         font-size: 1.5rem;
