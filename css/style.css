@@ -3,64 +3,194 @@
     font-family: 'Open Sans', sans-serif;
     margin: none;
 }
-/* .hapage{
-    display: flex;
-    align-items: flex-end;
-} */
-nav ul li{
-    /* display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between; */
-    /* background: linear-gradient(rgba(21, 107, 187, 0.418), rgba(207, 207, 207, 0.24),rgba(65, 65, 65, 0.767)); */
-    /* margin-top: auto; */
-    /* border-radius: 1.5rem; */
-    /* margin-left: auto; */
-    /* padding: .2rem .9rem; */
+body{
+    background-image: url('/img/thomas-lefebvre-_0eMNseqmYk-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.navbar{
+    background: linear-gradient(rgba(13, 52, 228, 0.589), rgba(34, 57, 77, 0.753), rgba(94, 94, 94, 0.473))
+}
+.navbar-toggler{
+    background: linear-gradient(rgba(44, 44, 44, 0.651), rgba(55, 109, 159, 0.76), rgba(139, 241, 255, 0.226) );
     color: white;
-    font-size: 2.5rem;
-    /* list-style-type: none;
-    float: right; */
+    box-shadow: 1px 1px 1px black;
+    border: 2px 2px solid white;
+
 }
-.right{
+.navbar-nav, .nav-item{
     display: flex;
-    justify-content: space-around;
-    /* align-self: flex-end; */
-    align-self: flex-end;
+    justify-content: space-evenly;
+    font-size: 2.5rem;
+    
 }
-/* .jumbo1{
-    position:sticky;
-    left: 50%;
-} */
+.nav-link{
+    background: linear-gradient(rgba(55, 109, 159, 0.733), rgba(30, 49, 136, 0.514));
+    border: 3px solid rgba(0, 0, 0, 0.63);
+    border-radius: 1rem;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.377);
+}
+.logo1{
+    margin-top: 5rem;
+    margin-left: 5rem;
+    height: 20rem;
+    width: 20rem;
+}
+.caroitem1{
+    background-image: url(/img/LAsterling-davis-4iXagiKXn3Y-unsplash.jpg);
+}
+.caroitem2{
+    background-image: url(/img/LA2venti-views-cHRDevKFDBw-unsplash.jpg);
+}
+.caroitem3{
+    background-image: url(/img/LA3venti-views-0YWaDPylkYA-unsplash.jpg);
+}
+.carousel-item{
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(0.10);
+}
 .jumbotron{
-    color: rgb(0, 0, 0);
-    border: 2px rgb(0, 0, 0) solid;
+    color: rgba(255, 255, 255, 0.918);
+    border: 5px rgba(55, 109, 159, 0.76) solid;
+    border-radius: 2rem;
     display: flex;
     justify-content: center;
     align-content: center;
     word-wrap: wrap;
-    position:static;
+    position: absolute;
+    top: 40rem;
     transition: transform .7s ease-in-out, color .5s ease-out, border-width .6s ease-in-out, border-color .5s ease-in-out;
+}
+.jumbotext1{
+    display: flex;
+    font-size: 2.25rem;
+    font-style: italic;
+    text-shadow: 3px 2px 2px black;
 }
 .jumbotron:hover {
     transform: scale(1.1,1.1);
-    color: rgba(41, 40, 40, 0.719);
-    border-width: 4px;
-    border-color: rgba(0, 0, 0, 0.384);
+    color: rgb(255, 255, 255);
+    border-width: 7px;
+    border-color: rgba(55, 109, 159, 0.863);
 }
-/* body{
-    background: linear-gradient(rgb(0, 0, 255), rgba(122, 122, 122, 0.199), rgba(66, 66, 66, 0.767))
-} */
-/* .header{
-    height: 2.5rem;
-    color: rgb(0, 136, 255);
-} */
-/* .navbar{
-    height: 8.5rem;
-    color: rgba(19, 73, 66, 0.596);
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-} */
+section h3, aside h3{
+    font-weight: bolder;
+    font-size: 1.75rem;
+}
 aside{
-    height: 50rem;
+    height: 57rem;
 }
+.footie{
+    height: 10rem;
+    position: absolute;
+    color: linear-gradient(rgba(13, 52, 228, 0.589), rgba(34, 57, 77, 0.753), rgba(94, 94, 94, 0.473))
+}
+@media only screen and (min-width: 992px) {
+    * {
+        font-size: 20px;
+      }
+      .logo1{
+      height: 12.5rem;
+      width: 14.5rem;
+      margin-top: .5rem;
+      margin-left: -1rem;
+      }
+      .nav-item{
+          font-size: 1.5rem;
+          padding: .5rem .5rem;
+      }
+      .jumbotron{
+          top: 45vh;
+          transition: none;
+          }
+      /* .jumbotron:hover{
+          transform: none;
+          border-width: 5px;
+      } */
+      .jumbotext1{
+          font-size: 1.25rem;
+      }
+    }
+
+@media (max-width: 990px) {
+    * {
+      font-size: 24px;
+    }
+    .logo1{
+    height: 11.5rem;
+    width: 14.5rem;
+    margin-top: -2rem;
+    margin-left: -1rem;
+    }
+    .nav-item{
+        font-size: 1.5rem;
+        padding: .5rem .5rem;
+    }
+    .jumbotron{
+        top: 45vh;
+        transition: none;
+        }
+    .jumbotron:hover{
+        transform: none;
+        border-width: 5px;
+    }
+    .jumbotext1{
+        font-size: 1.25rem;
+    }
+  }
+@media (max-width: 768px) {
+    *{
+      font-size: 24px;
+    }
+    .logo1{
+    height: 11.5rem;
+    width: 14.5rem;
+    margin-top: -2rem;
+    margin-left: -1rem;
+    }
+    .nav-item{
+        font-size: 1.5rem;
+        padding: .5rem .5rem;
+    }
+    .jumbotron{
+        top: 45vh;
+        transition: none;
+        }
+    .jumbotron:hover{
+        transform: none;
+        border-width: 5px;
+    }
+    .jumbotext1{
+        font-size: 1.25rem;
+    }
+  }
+  @media (max-width: 480px) {
+    * {
+      font-size: 18px;
+        }
+    .logo1{
+        height: 12rem;
+        width: 13rem;
+        margin-top: -2rem;
+        margin-left: -1rem;
+        }
+    .nav-item{
+        font-size: 1.5rem;
+        padding: .5rem .5rem;
+    }
+    .jumbotron{
+        top: 25vh;
+        transition: none;
+        }
+    .jumbotron:hover{
+        transform: none;
+        border-width: 5px;
+    }
+    .jumbotext1{
+        font-size: 1.5rem;
+    }
+  }
