@@ -21,8 +21,8 @@ body{
 }
 .navbar-nav, .nav-item{
     display: flex;
-    justify-content: space-evenly;
-    font-size: 2.5rem;
+    justify-content:flex-end;
+    font-size: 2.25rem;
     
 }
 .nav-link{
@@ -30,9 +30,14 @@ body{
     border: 3px solid rgba(0, 0, 0, 0.63);
     border-radius: 1rem;
     box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.377);
+    animation: nav-link 2s ease 0s 1 normal forwards;
 }
+/* .nav-link:hover{
+
+} */
 .logo1{
-    margin-top: 5rem;
+    padding-top: 1.5rem;
+    /* margin-top: 5rem; */
     margin-left: 5rem;
     height: 20rem;
     width: 20rem;
@@ -67,6 +72,7 @@ body{
 }
 .jumbotext1{
     display: flex;
+    justify-content: center;
     font-size: 2.25rem;
     font-style: italic;
     text-shadow: 3px 2px 2px black;
@@ -84,11 +90,11 @@ section h3, aside h3{
 aside{
     height: 57rem;
 }
-.footie{
+/* .footie{
     height: 10rem;
     position: absolute;
     color: linear-gradient(rgba(13, 52, 228, 0.589), rgba(34, 57, 77, 0.753), rgba(94, 94, 94, 0.473))
-}
+} */
 @media only screen and (min-width: 992px) {
     * {
         font-size: 20px;
@@ -183,7 +189,7 @@ aside{
         padding: .5rem .5rem;
     }
     .jumbotron{
-        top: 25vh;
+        top: 35vh;
         transition: none;
         }
     .jumbotron:hover{
@@ -191,6 +197,17 @@ aside{
         border-width: 5px;
     }
     .jumbotext1{
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
   }
+  @keyframes nav-link {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
