@@ -5,7 +5,7 @@
 }
 body{
     overflow-x: hidden;
-    background-image: url('img/thomas-lefebvre-_0eMNseqmYk-unsplash.jpg');
+    background-image: url('/img/thomas-lefebvre-_0eMNseqmYk-unsplash.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -19,6 +19,7 @@ body{
 .navbar-toggler{
     background: linear-gradient(rgba(187, 173, 44, 0.719), rgba(55, 109, 159, 0.767), rgba(30, 49, 136, 0.753));
     box-shadow: .25px 1px 1px rgb(212, 194, 0);
+    animation: navbar-toggler 2s ease 0s 1 normal;
 }
 .navbar-nav, .nav-item{
     display: flex;

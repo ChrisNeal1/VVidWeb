@@ -5,7 +5,7 @@
 }
 body{
     overflow-x: hidden;
-    background-image: url('img/thomas-lefebvre-_0eMNseqmYk-unsplash.jpg');
+    background-image: url('/img/thomas-lefebvre-_0eMNseqmYk-unsplash.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover; 
@@ -294,14 +294,14 @@ footer{
 		transform: translateY(0);
 	}
 }
-    @keyframes jumbotron {
-        
-        0% {
-            opacity: 0;
-            transform: translateY(400px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0px);
+@keyframes jumbotron {
+    
+    0% {
+        opacity: 0;
+        transform: translateY(400px);
     }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+}
 }
