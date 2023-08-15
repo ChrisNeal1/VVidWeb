@@ -1,57 +1,69 @@
 *{
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
-    margin: none;
+    margin: none;    
 }
 body{
+    overflow-x: hidden;
     background-image: url('/img/thomas-lefebvre-_0eMNseqmYk-unsplash.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; 
 }
-.navbar{
-    background: linear-gradient(rgba(13, 52, 228, 0.589), rgba(34, 57, 77, 0.753), rgba(94, 94, 94, 0.473))
-}
+#navbar {
+    position: fixed;
+    width: 100vw; 
+    transition: top 0.7s;
+    height: fit-content;
+  }
 .navbar-toggler{
-    background: linear-gradient(rgba(44, 44, 44, 0.651), rgba(55, 109, 159, 0.76), rgba(139, 241, 255, 0.226) );
-    color: white;
-    box-shadow: 1px 1px 1px black;
-    border: 2px 2px solid white;
-
+    background: linear-gradient(rgba(187, 173, 44, 0.719), rgba(55, 109, 159, 0.767), rgba(30, 49, 136, 0.753));
+    box-shadow: .25px 1px 1px rgb(212, 194, 0);
+    animation: navbar-toggler 2s ease 0s 1 normal;
 }
 .navbar-nav, .nav-item{
     display: flex;
     justify-content:flex-end;
     font-size: 2.25rem;
+    font-weight: bold;
     
 }
 .nav-link{
-    background: linear-gradient(rgba(55, 109, 159, 0.733), rgba(30, 49, 136, 0.514));
-    border: 3px solid rgba(0, 0, 0, 0.63);
+    background: linear-gradient(rgb(187, 173, 44), rgba(55, 109, 159, 0.966), rgba(30, 49, 136, 0.753));
+    border: 3px solid;
     border-radius: 1rem;
-    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.377);
-    animation: nav-link 2s ease 0s 1 normal forwards;
+    border-width: 3px;
+    border-color: rgb(21, 54, 89);
+    box-shadow: .5px 2px 2px rgba(0, 0, 0, 0.377);
+    animation: nav-link 2s ease 0s 1 normal;
+    transition: border-color .2s ease-in-out;
 }
-/* .nav-link:hover{
-
-} */
+.nav-link:hover{
+    background: linear-gradient(10deg, rgb(30, 49, 136), rgb(55, 109, 159), rgba(187, 173, 44, 0.753));
+    border-color: rgb(55, 109, 159);
+}
 .logo1{
-    padding-top: 1.5rem;
-    /* margin-top: 5rem; */
-    margin-left: 5rem;
-    height: 20rem;
-    width: 20rem;
+    height: 19rem;
+    width: 32rem;
+    animation: logo1 2s ease 0s 1 normal;
 }
 .caroitem1{
     background-image: url(/img/LAsterling-davis-4iXagiKXn3Y-unsplash.jpg);
 }
 .caroitem2{
-    background-image: url(/img/LA2venti-views-cHRDevKFDBw-unsplash.jpg);
+    background-image: url(/img/mtbaldy_istockphoto-1048932540-1024x1024.jpg);
 }
 .caroitem3{
     background-image: url(/img/LA3venti-views-0YWaDPylkYA-unsplash.jpg);
 }
+.caroitem4{
+    background-image: url(/img/lisha-riabinina-VcGxwsSxFZI-unsplash.jpg);
+}
+.caroitem5{
+    background-image: url(/img/gerson-repreza-ph9YHKI-9E4-unsplash.jpg);
+}
 .carousel-item{
+    width: fit-content;
     height: 80vh;
     background-size: cover;
     background-position: center;
@@ -59,111 +71,110 @@ body{
     filter: grayscale(0.10);
 }
 .jumbotron{
-    color: rgba(255, 255, 255, 0.918);
-    border: 5px rgba(55, 109, 159, 0.76) solid;
+    background-color: rgba(255, 255, 255, 0.274);
+    border: 5px rgba(21,54,89, 0.76) solid;
     border-radius: 2rem;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-content: center;
     word-wrap: wrap;
     position: absolute;
-    top: 40rem;
-    transition: transform .7s ease-in-out, color .5s ease-out, border-width .6s ease-in-out, border-color .5s ease-in-out;
+    margin-top: 6rem;
+    transition: transform .7s ease-in-out, background-color .5s ease-out, border-width .6s ease-in-out, border-color .5s ease-in-out;
+    animation: jumbotron 2s ease 0s 1 normal;
+    
+    /* animation: nav-link 2s ease 0s 1 normal forwards; */
 }
 .jumbotext1{
     display: flex;
     justify-content: center;
     font-size: 2.25rem;
     font-style: italic;
-    text-shadow: 3px 2px 2px black;
+    text-shadow: .25px 1px 1px rgb(212, 194, 0);
 }
 .jumbotron:hover {
     transform: scale(1.1,1.1);
-    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.322);
     border-width: 7px;
     border-color: rgba(55, 109, 159, 0.863);
 }
-section h3, aside h3{
+section h2, aside h2{
     font-weight: bolder;
-    font-size: 1.75rem;
+    font-size: 1.8rem;
+    text-shadow: .25px 1px 1px rgb(212, 194, 0);
 }
-aside{
-    height: 57rem;
+article h4, aside h4{
+    font-weight: bold;
 }
-/* .footie{
-    height: 10rem;
-    position: absolute;
-    color: linear-gradient(rgba(13, 52, 228, 0.589), rgba(34, 57, 77, 0.753), rgba(94, 94, 94, 0.473))
-} */
+footer{
+    width: 100%;
+    background: linear-gradient(48deg, rgba(36,56,83,1) 10%, rgba(24,74,122,1) 25%, rgba(30,97,138,1) 35%, rgba(71,93,117,1) 54%, rgba(88,109,130,0.969625350140056) 74%, rgba(212, 194, 0, 0.795) 100%);
+}
 @media only screen and (min-width: 992px) {
     * {
-        font-size: 20px;
+        font-size: 22px;
       }
       .logo1{
-        height: 12.75rem;
-        width: 14.5rem;
-        margin-top: .5rem;
-        margin-left: -1rem;
+        height: 10rem;
+        width: 16rem;
+        margin-top: -.25rem;
+        margin-left: -.5rem;
       }
       .nav-item{
           font-size: 1.5rem;
           padding: .5rem .5rem;
       }
       .jumbotron{
-          top: 45vh;
+          top: 40vh;
           
           }
-      /* .jumbotron:hover{
-          transform: none;
-          border-width: 5px;
-      } */
       .jumbotext1{
           font-size: 1.5rem;
       }
     }
 
-@media (max-width: 990px) {
+@media only screen and (max-width: 991px) {
     * {
       font-size: 24px;
     }
     .logo1{
-        height: 11.5rem;
-        width: 14.5rem;
-        margin-top: -2rem;
-        margin-left: -1rem;
+        height: 9rem;
+        width: 15rem;
+        margin-top: -.2rem;
+        margin-left: -.5rem;
     }
     .nav-item{
         font-size: 1.5rem;
         padding: .5rem .5rem;
     }
     .jumbotron{
-        top: 45vh;
+        top: 32vh;
         transition: none;
         }
     .jumbotron:hover{
         transform: none;
-        border-width: 5px;
+        border: 5px rgba(21,54,89, 0.76) solid;
+        background-color: rgba(255, 255, 255, 0.274);
     }
     .jumbotext1{
         font-size: 1.25rem;
     }
   }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     *{
-      font-size: 24px;
+      font-size: 20px;
     }
     .logo1{
-        height: 11.5rem;
-        width: 14.5rem;
-        margin-top: -2rem;
-        margin-left: -1rem;
+        height: 8rem;
+        width: 13.8rem;
     }
     .nav-item{
         font-size: 1.5rem;
         padding: .5rem .5rem;
     }
     .jumbotron{
-        top: 45vh;
+        top: 33vh;
         transition: none;
         }
     .jumbotron:hover{
@@ -176,25 +187,75 @@ aside{
   }
   @media (max-width: 480px) {
     * {
-      font-size: 18px;
+      font-size: 14px;
         }
     .logo1{
-        height: 12rem;
-        width: 13rem;
-        margin-top: -2rem;
-        margin-left: -1rem;
+        height: 7.5rem;
+        width: 11rem;
+
         }
     .nav-item{
         font-size: 1.5rem;
         padding: .5rem .5rem;
     }
     .jumbotron{
-        top: 35vh;
+        top: 41.5vh;
         transition: none;
         }
     .jumbotron:hover{
         transform: none;
-        border-width: 5px;
+        border: 5px rgba(21,54,89, 0.76) solid;
+        background-color: rgba(255, 255, 255, 0.274);
+    }
+    .jumbotext1{
+        font-size: 1.25rem;
+    }
+  }
+  @media (max-width: 359px) {
+    * {
+      font-size: 11px;
+        }
+    .logo1{
+        height: 6.4rem;
+        width: 10rem;
+        }
+    .nav-item{
+        font-size: 1.5rem;
+        padding: .5rem .5rem;
+    }
+    .jumbotron{
+        top: 53vh;
+        transition: none;
+        }
+    .jumbotron:hover{
+        transform: none;
+        border: 5px rgba(21,54,89, 0.76) solid;
+        background-color: rgba(255, 255, 255, 0.274);
+    }
+    .jumbotext1{
+        font-size: 1.25rem;
+    }
+  }
+  @media (max-width: 359px) {
+    * {
+      font-size: 10px;
+        }
+    .logo1{
+        height: 6.4rem;
+        width: 10rem;
+        }
+    .nav-item{
+        font-size: 1.5rem;
+        padding: .5rem .5rem;
+    }
+    .jumbotron{
+        top: 53vh;
+        transition: none;
+        }
+    .jumbotron:hover{
+        transform: none;
+        border: 5px rgba(21,54,89, 0.76) solid;
+        background-color: rgba(255, 255, 255, 0.274);
     }
     .jumbotext1{
         font-size: 1.25rem;
@@ -210,4 +271,37 @@ aside{
 		opacity: 1;
 		transform: translateY(0);
 	}
+}
+@keyframes navbar-toggler {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes logo1 {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+    @keyframes jumbotron {
+        
+        0% {
+            opacity: 0;
+            transform: translateY(400px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+    }
 }
