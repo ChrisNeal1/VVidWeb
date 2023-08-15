@@ -94,7 +94,7 @@ body{
     text-shadow: .25px 1px 1px rgb(212, 194, 0);
 }
 .jumbotron:hover {
-    transform: scale(1.1,1.1);
+    transform: scale(1.05,1.05);
     background-color: rgba(255, 255, 255, 0.322);
     border-width: 7px;
     border-color: rgba(55, 109, 159, 0.863);
