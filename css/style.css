@@ -48,7 +48,8 @@ body{
     animation: logo1 2s ease 0s 1 normal;
 }
 .caroitem1{
-    background-image: url(/img/LAsterling-davis-4iXagiKXn3Y-unsplash.jpg);
+    /* background-image: url(/img/LAsterling-davis-4iXagiKXn3Y-unsplash.jpg); */
+    background-image: url(LAsterling-davis-4iXagiKXn3Y-unsplash.jpg);
 }
 .caroitem2{
     background-image: url(/img/mtbaldy_istockphoto-1048932540-1024x1024.jpg);
